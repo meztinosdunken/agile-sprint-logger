@@ -1,12 +1,11 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json()); // Updated to use Express' built-in JSON middleware
 
 // Sample route
 app.get('/', (req, res) => {
