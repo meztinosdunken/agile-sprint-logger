@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
-app.use(express.json()); // Updated to use Express' built-in JSON middleware
+app.use(express.json()); // Using Express' built-in middleware to parse JSON
 
 // Sample route
 app.get('/', (req, res) => {
