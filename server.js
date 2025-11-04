@@ -9,7 +9,7 @@ app.use(express.json()); // Updated to use Express' built-in JSON middleware
 
 // Sample route
 app.get('/', (req, res) => {
-  res.send('Welcome to Agile Sprint Logger!');
+  res.send('Welcome to the Agile Sprint Logger API!');
 });
 
 app.listen(PORT, () => {
